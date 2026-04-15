@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 920" width="1500" height="920">
+  <title>AI Task Force  Short Sleeve Polo Mockup</title>
+  <desc>Three-view mockup: front, back, and side. Navy base, cyan circuitry, white panel lines, teal hex mesh on sleeves.</desc>
+
+  <defs>
+    <!-- Navy base -->
+    <linearGradient id="navyBody" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f1f38"/>
+      <stop offset="100%" stop-color="#070f1c"/>
+    </linearGradient>
+
+    <!-- Cyan glow for graphics -->
+    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5ff"/>
+      <stop offset="50%" stop-color="#0cf"/>
+      <stop offset="100%" stop-color="#08a"/>
+    </linearGradient>
+
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="strongGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Teal hex mesh (simplified grid) -->
+    <pattern id="hexMesh" width="14" height="24" patternUnits="userSpaceOnUse" patternTransform="scale(1)">
+      <path d="M7 0 L14 4 L14 12 L7 16 L0 12 L0 4 Z" fill="none" stroke="#2a8a9e" stroke-width="0.6" opacity="0.85"/>
+      <path d="M7 8 L14 12 L14 20 L7 24 L0 20 L0 12 Z" fill="none" stroke="#2a8a9e" stroke-width="0.6" opacity="0.85"/>
+    </pattern>
+
+    <!-- Subtle fabric sheen -->
+    <linearGradient id="sheen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.03"/>
+      <stop offset="40%" stop-color="#fff" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0.02"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1500" height="920" fill="#1a1a24"/>
+
+  <!-- Labels -->
+  <text x="250" y="48" fill="#9aa4b8" font-family="system-ui, Segoe UI, sans-serif" font-size="14" font-weight="600" letter-spacing="0.12em">FRONT</text>
+  <text x="750" y="48" fill="#9aa4b8" font-family="system-ui, Segoe UI, sans-serif" font-size="14" font-weight="600" letter-spacing="0.12em">BACK</text>
+  <text x="1250" y="48" fill="#9aa4b8" font-family="system-ui, Segoe UI, sans-serif" font-size="14" font-weight="600" letter-spacing="0.12em" text-anchor="middle">SIDE</text>
+
+  <!-- ========== FRONT (short-sleeve polo) ========== -->
+  <g transform="translate(0, 60)">
+    <!-- Torso + short sleeves -->
+    <path id="poloFrontBody" fill="url(#navyBody)" stroke="#1e3a5c" stroke-width="1.2"
+      d="M 120 120
+         C 120 95, 145 75, 175 70
+         L 210 65 L 250 62 L 290 65 L 325 70
+         C 355 75, 380 95, 380 120
+         L 385 155 L 388 220 L 390 320 L 392 420 L 395 520
+         L 400 620 L 105 620 L 110 520 L 112 420 L 115 320 L 118 220 L 120 155 Z"/>
+
+    <!-- Short sleeves -->
+    <path fill="url(#navyBody)" stroke="#1e3a5c" stroke-width="1"
+      d="M 120 120 L 95 135 L 75 165 L 62 205 L 55 248 L 52 285 L 115 295 L 118 220 Z"/>
+    <path fill="url(#navyBody)" stroke="#1e3a5c" stroke-width="1"
+      d="M 380 120 L 405 135 L 425 165 L 438 205 L 445 248 L 448 285 L 385 295 L 382 220 Z"/>
+
+    <!-- Hex mesh on outer sleeves -->
+    <path fill="url(#hexMesh)" opacity="0.55"
+      d="M 62 205 L 55 248 L 52 285 L 115 295 L 118 230 L 95 200 Z"/>
+    <path fill="url(#hexMesh)" opacity="0.55"
+      d="M 438 205 L 445 248 L 448 285 L 385 295 L 382 230 L 405 200 Z"/>
+
+    <!-- Polo collar (navy) -->
+    <path fill="#0c1828" stroke="#2a4560" stroke-width="1"
+      d="M 210 65 L 250 62 L 290 65 L 285 88 L 250 92 L 215 88 Z"/>
+    <path fill="#0a1424" stroke="#243850" stroke-width="0.8"
+      d="M 235 88 L 250 90 L 265 88 L 262 102 L 250 105 L 238 102 Z"/>
+
+    <!-- Button placket (navy, short)  graphic sits below -->
+    <rect x="242" y="92" width="16" height="52" rx="2" fill="#0a1424" stroke="#2a4560" stroke-width="0.8"/>
+    <circle cx="250" cy="104" r="2.2" fill="#3a5068"/>
+    <circle cx="250" cy="118" r="2.2" fill="#3a5068"/>
+    <circle cx="250" cy="132" r="2.2" fill="#3a5068"/>
+
+    <!-- White geometric panel lines (torso) -->
+    <g fill="none" stroke="#e8eef5" stroke-width="1.1" stroke-linecap="round" opacity="0.92">
+      <path d="M 175 180 L 155 350 L 148 480"/>
+      <path d="M 325 180 L 345 350 L 352 480"/>
+      <path d="M 195 200 L 250 195 L 305 200"/>
+      <path d="M 188 280 L 250 275 L 312 280"/>
+      <path d="M 165 400 L 250 395 L 335 400"/>
+      <path d="M 130 240 L 140 320"/>
+      <path d="M 370 240 L 360 320"/>
+    </g>
+
+    <!-- Sleeve white wrap lines -->
+    <g fill="none" stroke="#e8eef5" stroke-width="0.9" opacity="0.85">
+      <path d="M 72 215 L 95 235 L 108 265"/>
+      <path d="M 428 215 L 405 235 L 392 265"/>
+    </g>
+
+    <!-- Central chest circuitry (below placket) -->
+    <g transform="translate(250, 200)" filter="url(#softGlow)">
+      <!-- Outer rings -->
+      <circle r="58" fill="none" stroke="url(#cyanGlow)" stroke-width="1.5" opacity="0.9"/>
+      <circle r="44" fill="none" stroke="#4ef" stroke-width="1.2" opacity="0.85"/>
+      <circle r="28" fill="none" stroke="#7ff" stroke-width="1.4" opacity="0.95"/>
+      <circle r="14" fill="#0cf" opacity="0.35"/>
+      <circle r="8" fill="#aff" opacity="0.6"/>
+
+      <!-- Horizontal traces / wings -->
+      <g stroke="#5ef" stroke-width="1.2" fill="none" opacity="0.9">
+        <path d="M -58 0 L -95 -8 L -115 -2"/>
+        <path d="M -58 4 L -92 12 L -112 18"/>
+        <path d="M 58 0 L 95 -8 L 115 -2"/>
+        <path d="M 58 4 L 92 12 L 112 18"/>
+        <circle cx="-118" cy="-5" r="3" fill="#5ff" opacity="0.9"/>
+        <circle cx="118" cy="-5" r="3" fill="#5ff" opacity="0.9"/>
+      </g>
+
+      <!-- Vertical tail -->
+      <g stroke="#4df" stroke-width="1.1" fill="none">
+        <path d="M 0 28 L 0 95"/>
+        <path d="M -6 38 L -4 70 L -8 95"/>
+        <path d="M 6 38 L 4 70 L 8 95"/>
+        <circle cx="0" cy="105" r="3.5" fill="#5ff" filter="url(#strongGlow)"/>
+        <circle cx="-12" cy="88" r="2.5" fill="#8ff"/>
+        <circle cx="12" cy="88" r="2.5" fill="#8ff"/>
+        <circle cx="-6" cy="115" r="2" fill="#6ef"/>
+        <circle cx="6" cy="115" r="2" fill="#6ef"/>
+      </g>
+    </g>
+
+    <!-- Shoulder hex accent -->
+    <path fill="url(#hexMesh)" opacity="0.4" d="M 175 70 L 210 65 L 250 62 L 250 95 L 215 100 L 175 95 Z"/>
+    <path fill="url(#hexMesh)" opacity="0.4" d="M 325 70 L 290 65 L 250 62 L 250 95 L 285 100 L 325 95 Z"/>
+
+    <rect x="115" y="125" width="270" height="380" fill="url(#sheen)" pointer-events="none"/>
+  </g>
+
+  <!-- ========== BACK ========== -->
+  <g transform="translate(500, 60)">
+    <path fill="url(#navyBody)" stroke="#1e3a5c" stroke-width="1.2"
+      d="M 120 120
+         C 120 95, 145 75, 175 70
+         L 210 65 L 250 62 L 290 65 L 325 70
+         C 355 75, 380 95, 380 120
+         L 385 155 L 388 220 L 390 320 L 392 420 L 395 520
+         L 400 620 L 105 620 L 110 520 L 112 420 L 115 320 L 118 220 L 120 155 Z"/>
+
+    <path fill="url(#navyBody)" stroke="#1e3a5c" stroke-width="1"
+      d="M 120 120 L 95 135 L 75 165 L 62 205 L 55 248 L 52 285 L 115 295 L 118 220 Z"/>
+    <path fill="url(#navyBody)" stroke="#1e3a5c" stroke-width="1"
+      d="M 380 120 L 405 135 L 425 165 L 438 205 L 445 248 L 448 285 L 385 295 L 382 220 Z"/>
+
+    <path fill="url(#hexMesh)" opacity="0.55"
+      d="M 62 205 L 55 248 L 52 285 L 115 295 L 118 230 L 95 200 Z"/>
+    <path fill="url(#hexMesh)" opacity="0.55"
+      d="M 438 205 L 445 248 L 448 285 L 385 295 L 382 230 L 405 200 Z"/>
+
+    <!-- Back collar -->
+    <path fill="#0c1828" stroke="#2a4560" stroke-width="1"
+      d="M 210 65 L 250 62 L 290 65 L 285 88 L 250 92 L 215 88 Z"/>
+
+    <!-- AI TASK FORCE -->
+    <g filter="url(#strongGlow)" text-anchor="middle" font-family="system-ui, Segoe UI, sans-serif">
+      <text x="250" y="118" fill="#5ff" font-size="42" font-weight="800" letter-spacing="0.06em">AI</text>
+      <text x="250" y="148" fill="#9ef" font-size="13" font-weight="600" letter-spacing="0.28em">TASK FORCE</text>
+    </g>
+
+    <!-- Digital spine -->
+    <g transform="translate(250, 195)" filter="url(#softGlow)">
+      <g stroke="url(#cyanGlow)" stroke-width="1.3" fill="none">
+        <circle cy="0" r="12" fill="#0cf" fill-opacity="0.25"/>
+        <circle cy="0" r="12"/>
+        <circle cy="85" r="11"/>
+        <circle cy="170" r="11"/>
+        <circle cy="255" r="10"/>
+        <path d="M 0 12 L 0 74"/>
+        <path d="M 0 96 L 0 159"/>
+        <path d="M 0 181 L 0 244"/>
+        <!-- Lateral traces -->
+        <path d="M -12 0 L -35 -8 L -45 5"/>
+        <path d="M 12 0 L 35 -8 L 45 5"/>
+        <path d="M -11 85 L -38 78 L -48 95"/>
+        <path d="M 11 85 L 38 78 L 48 95"/>
+        <path d="M -10 170 L -32 165 L -42 182"/>
+        <path d="M 10 170 L 32 165 L 42 182"/>
+      </g>
+      <g fill="#7ff" opacity="0.85">
+        <circle cx="-4" cy="40" r="2"/>
+        <circle cx="5" cy="52" r="1.8"/>
+        <circle cx="-6" cy="120" r="2"/>
+        <circle cx="7" cy="132" r="1.8"/>
+        <circle cx="-5" cy="200" r="2"/>
+        <circle cx="6" cy="212" r="1.8"/>
+      </g>
+    </g>
+
+    <!-- Back panel lines -->
+    <g fill="none" stroke="#e8eef5" stroke-width="1.1" opacity="0.9">
+      <path d="M 175 180 L 155 350 L 148 480"/>
+      <path d="M 325 180 L 345 350 L 352 480"/>
+      <path d="M 165 400 L 250 395 L 335 400"/>
+    </g>
+
+    <path fill="url(#hexMesh)" opacity="0.35" d="M 175 70 L 210 65 L 250 62 L 250 95 L 215 100 L 175 95 Z"/>
+    <path fill="url(#hexMesh)" opacity="0.35" d="M 325 70 L 290 65 L 250 62 L 250 95 L 285 100 L 325 95 Z"/>
+
+    <rect x="115" y="125" width="270" height="380" fill="url(#sheen)" pointer-events="none"/>
+  </g>
+
+  <!-- ========== SIDE (short sleeve profile) ========== -->
+  <g transform="translate(1000, 60)">
+    <!-- Simplified side silhouette -->
+    <path fill="url(#navyBody)" stroke="#1e3a5c" stroke-width="1.2"
+      d="M 180 125
+         C 165 130, 145 150, 140 185
+         L 135 280 L 132 420 L 130 620
+         L 280 620 L 285 420 L 288 280 L 292 185
+         C 295 145, 275 125, 255 118
+         L 220 108 Z"/>
+
+    <!-- Short sleeve bulge -->
+    <path fill="url(#navyBody)" stroke="#1e3a5c"
+      d="M 140 185 L 95 200 L 78 245 L 72 290 L 138 300 L 145 250 Z"/>
+
+    <path fill="url(#hexMesh)" opacity="0.6"
+      d="M 95 200 L 78 245 L 72 290 L 138 300 L 145 240 L 125 210 Z"/>
+
+    <g fill="none" stroke="#e8eef5" stroke-width="1" opacity="0.9">
+      <path d="M 165 200 L 155 340 L 148 500"/>
+      <path d="M 200 195 L 195 360"/>
+      <path d="M 125 230 L 115 300"/>
+      <path d="M 95 220 L 105 255 L 100 285"/>
+    </g>
+
+    <!-- Collar edge -->
+    <path fill="#0c1828" stroke="#2a4560"
+      d="M 220 108 L 255 118 L 250 135 L 210 128 Z"/>
+
+    <rect x="135" y="130" width="150" height="400" fill="url(#sheen)" opacity="0.6" pointer-events="none"/>
+  </g>
+</svg>
